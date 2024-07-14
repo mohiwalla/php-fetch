@@ -1,0 +1,32 @@
+{
+    "name": "mohiwalla/php-fetch",
+    "type": "library",
+    "description": "A PHP utility for customizable fetch requests with support for HTTP methods, headers, body, timeout, and SSL verification, handling input validation and cURL errors.",
+    "keywords": [
+        "php-fetch",
+        "datatable",
+        "datatables",
+        "mohiwalla"
+    ],
+    "autoload": {
+        "psr-4": {
+            "mohiwalla\\php-fetch\\": "/index.php"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version": "1.0.0",
+    "homepage": "https://github.com/mohiwalla/php-fetch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mohiwalla",
+            "email": "hindustanjindabad5911@gmail.com",
+            "homepage": "https://github.com/mohiwalla/php-fetch",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    }
+}
