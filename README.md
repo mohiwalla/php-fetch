@@ -38,14 +38,12 @@ Include the utility in your PHP script and use the `fetch` function to perform H
 #### Basic Example
 
 ```php
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/mohiwalla/php-fetch/index.php';
 
-use Mohiwalla\PhpFetch\FetchUtility;
-
-$res = FetchUtility::fetch('https://api.example.com/data');
+$res = fetch('https://dummyjson.com/users/1');
 $data = json_decode($res);
 
-echo "<pre>" . print_r($data, true) . "</pre>";
+echo print_r($data, true);
 ```
 
 #### Supported Options
