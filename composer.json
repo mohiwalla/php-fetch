@@ -12,9 +12,9 @@
         "curl library"
     ],
     "autoload": {
-        "psr-4": {
-            "mohiwalla\\php-fetch\\": "/index.php"
-        }
+        "files": [
+            "index.php"
+        ]
     },
     "version": "1.0.0",
     "homepage": "https://github.com/mohiwalla/php-fetch",
