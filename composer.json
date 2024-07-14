@@ -3,7 +3,7 @@
     "type": "library",
     "description": "A PHP utility for customizable fetch requests with support for HTTP methods, headers, body, timeout, and SSL verification, handling input validation and cURL errors.",
     "keywords": [
-        "curl",
+        "crul",
         "php-fetch",
         "fetch api",
         "fetch php",
@@ -11,11 +11,6 @@
         "curl fetch",
         "curl library"
     ],
-    "autoload": {
-        "psr-4": {
-            "mohiwalla\\PHPfetch\\": "src/"
-        }
-    },
     "version": "1.0.0",
     "homepage": "https://github.com/mohiwalla/php-fetch",
     "license": "MIT",
