@@ -25,6 +25,12 @@ Then run:
 composer install
 ```
 
+OR just run this command in first place:
+
+```sh
+composer require mohiwalla/php-fetch
+```
+
 #### Usage
 
 Include the utility in your PHP script and use the `fetch function` to perform HTTP requests.
