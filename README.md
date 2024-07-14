@@ -7,7 +7,7 @@ A PHP utility for performing fetch requests with customizable options such as HT
 -   PHP 7.0 or higher
 -   cURL extension enabled
 
-#### Installation
+### Installation
 
 To install the utility, you can use Composer. Add the following to your `composer.json` file:
 
@@ -25,57 +25,45 @@ Then run:
 composer install
 ```
 
-OR just run this command in first place:
+OR just run this command directly:
 
 ```sh
 composer require mohiwalla/php-fetch
 ```
 
-#### Usage
+### Usage
 
-Include the utility in your PHP script and use the `fetch function` to perform HTTP requests.
+Include the utility in your PHP script and use the `fetch` function to perform HTTP requests.
 
-##### Basic Example
+#### Basic Example
 
 ```php
 require 'vendor/autoload.php';
 
-use YourNamespace\FetchUtility;
+use Mohiwalla\PhpFetch\FetchUtility;
 
-try {
-    $response = FetchUtility::fetch('https://api.example.com/data', [
-        'method' => 'GET',
-        'headers' => [
-            'Authorization' => 'Bearer your_token'
-        ],
-        'timeout' => 60,
-        'ssl_verify' => true
-    ]);
+$res = FetchUtility::fetch('https://api.example.com/data');
+$data = json_decode($res);
 
-    echo $response;
-} catch (InvalidArgumentException $e) {
-    echo 'Error: ' . $e->getMessage();
-} catch (RuntimeException $e) {
-    echo 'Error: ' . $e->getMessage();
-}
+echo "<pre>" . print_r($data, true) . "</pre>";
 ```
 
-##### Supported Options
+#### Supported Options
 
-- *method*: The HTTP method to use for the request (default: `GET`).
-- *headers*: An associative array of custom headers to include in the request.
-- *body*: The request body data, used with methods like `POST` and `PUT`.
-- *timeout*: Request timeout in seconds (default: `30`).
-- *ssl_verify*: Whether to verify SSL certificates (default: `false`).
+-   **method**: The HTTP method to use for the request (default: `GET`).
+-   **headers**: An associative array of custom headers to include in the request.
+-   **body**: The request body data, used with methods like `POST` and `PUT`.
+-   **timeout**: Request timeout in seconds (default: `30`).
+-   **ssl_verify**: Whether to verify SSL certificates (default: `false`).
 
-##### Exception Handling
+#### Exception Handling
 
-The `php-fetch` throws the following exceptions:
+The `php-fetch` utility throws the following exceptions:
 
-- `InvalidArgumentException`: If the options parameter is not an array or an invalid HTTP method is specified.
-- `RuntimeException`: If a cURL error occurs during the request.
+-   `InvalidArgumentException`: If the options parameter is not an array or an invalid HTTP method is specified.
+-   `RuntimeException`: If a cURL error occurs during the request.
 
-#### Contributing
+### Contributing
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-branch`).
@@ -84,6 +72,6 @@ The `php-fetch` throws the following exceptions:
 5. Push to the branch (`git push origin feature-branch`).
 6. Create a new Pull Request.
 
-#### License
+### License
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/mohiwalla/php-fetch/blob/main/LICENSE) file for details.
