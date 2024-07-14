@@ -80,4 +80,4 @@ The `php-fetch` throws the following exceptions:
 
 #### License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/mohiwalla/php-fetch/blob/mohiwalla/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/mohiwalla/php-fetch/blob/main/LICENSE) file for details.
