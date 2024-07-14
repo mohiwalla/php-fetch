@@ -13,8 +13,6 @@
             "mohiwalla\\php-fetch\\": "/index.php"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "version": "1.0.0",
     "homepage": "https://github.com/mohiwalla/php-fetch",
     "license": "MIT",
